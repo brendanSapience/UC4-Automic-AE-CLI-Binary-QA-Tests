@@ -6,23 +6,23 @@ cd $BINREPO
 
 $JavaBin = "OBjECTS_Create.jar"
 
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_WIN" -name "JAVA.API.JOBS.JOBS_WIN.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_WIN" -name "JAVA.API.JOBS.JOBS_WIN.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.WIN" -name "JAVA.API.JOBS.JOBS_WIN.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.WIN" -name "JAVA.API.JOBS.JOBS_WIN.1" -folder "API.TESTS.TARGET"' 99
 
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_UNIX" -name "JAVA.API.JOBS.JOBS_UNIX.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_UNIX" -name "JAVA.API.JOBS.JOBS_UNIX.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.UNIX" -name "JAVA.API.JOBS.JOBS_UNIX.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.UNIX" -name "JAVA.API.JOBS.JOBS_UNIX.1" -folder "API.TESTS.TARGET"' 99
  
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_SQL" -name "JAVA.API.JOBS.JOBS_SQL.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_SQL" -name "JAVA.API.JOBS.JOBS_SQL.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.SQL" -name "JAVA.API.JOBS.JOBS_SQL.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.SQL" -name "JAVA.API.JOBS.JOBS_SQL.1" -folder "API.TESTS.TARGET"' 99
  
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_VMS" -name "JAVA.API.JOBS.JOBS_VMS.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_VMS" -name "JAVA.API.JOBS.JOBS_VMS.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.VMS" -name "JAVA.API.JOBS.JOBS_VMS.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.VMS" -name "JAVA.API.JOBS.JOBS_VMS.1" -folder "API.TESTS.TARGET"' 99
  
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_JMX" -name "JAVA.API.JOBS.JOBS_JMX.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_JMX" -name "JAVA.API.JOBS.JOBS_JMX.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.JMX" -name "JAVA.API.JOBS.JOBS_JMX.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.JMX" -name "JAVA.API.JOBS.JOBS_JMX.1" -folder "API.TESTS.TARGET"' 99
  
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_OS400" -name "JAVA.API.JOBS.JOBS_OS400.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS_OS400" -name "JAVA.API.JOBS.JOBS_OS400.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.OS400" -name "JAVA.API.JOBS.JOBS_OS400.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBS.OS400" -name "JAVA.API.JOBS.JOBS_OS400.1" -folder "API.TESTS.TARGET"' 99
  
 AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBF" -name "JAVA.API.JOBS.JOBF.1" -folder "API.TESTS.TARGET"' 0
 AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBF" -name "JAVA.API.JOBS.JOBF.1" -folder "API.TESTS.TARGET"' 99
@@ -30,74 +30,74 @@ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBF" -name "JAVA.AP
 AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBI" -name "JAVA.API.JOBS.JOBI.1" -folder "API.TESTS.TARGET"' 0
 AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBI" -name "JAVA.API.JOBS.JOBI.1" -folder "API.TESTS.TARGET"' 99
  
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP" -name "JAVA.API.JOBP.JOBP.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP" -name "JAVA.API.JOBP.JOBP.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP.STANDARD" -name "JAVA.API.JOBP.JOBP.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP.STANDARD" -name "JAVA.API.JOBP.JOBP.1" -folder "API.TESTS.TARGET"' 99
  
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP_IF" -name "JAVA.API.JOBP.JOBP_IF.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP_IF" -name "JAVA.API.JOBP.JOBP_IF.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP.IF" -name "JAVA.API.JOBP.JOBP_IF.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP.IF" -name "JAVA.API.JOBP.JOBP_IF.1" -folder "API.TESTS.TARGET"' 99
  
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP_FOREACH" -name "JAVA.API.JOBP.JOBP_FOREACH.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP_FOREACH" -name "JAVA.API.JOBP.JOBP_FOREACH.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP.FOREACH" -name "JAVA.API.JOBP.JOBP_FOREACH.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JOBP.FOREACH" -name "JAVA.API.JOBP.JOBP_FOREACH.1" -folder "API.TESTS.TARGET"' 99
  
 AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA" -name "JAVA.API.VARA.VARA.1" -folder "API.TESTS.TARGET"' 0
 AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA" -name "JAVA.API.VARA.VARA.1" -folder "API.TESTS.TARGET"' 99
 
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_FILELIST" -name "JAVA.API.VARA.VARA_FILELIST.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_FILELIST" -name "JAVA.API.VARA.VARA_FILELIST.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.FILELIST" -name "JAVA.API.VARA.VARA_FILELIST.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.FILELIST" -name "JAVA.API.VARA.VARA_FILELIST.1" -folder "API.TESTS.TARGET"' 99
  
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_MULTI" -name "JAVA.API.VARA.VARA_MULTI.1" -folder "API.TESTS.TARGET"' 0
-AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_MULTI" -name "JAVA.API.VARA.VARA_MULTI.1" -folder "API.TESTS.TARGET"' 99
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.MULTI" -name "JAVA.API.VARA.VARA_MULTI.1" -folder "API.TESTS.TARGET"' 0
+AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.MULTI" -name "JAVA.API.VARA.VARA_MULTI.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_SQL" -name "JAVA.API.VARA.VARA_SQL.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_SQL" -name "JAVA.API.VARA.VARA_SQL.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.SQL" -name "JAVA.API.VARA.VARA_SQL.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.SQL" -name "JAVA.API.VARA.VARA_SQL.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_SQLI" -name "JAVA.API.VARA.VARA_SQLI.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_SQLI" -name "JAVA.API.VARA.VARA_SQLI.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.SQLI" -name "JAVA.API.VARA.VARA_SQLI.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.SQLI" -name "JAVA.API.VARA.VARA_SQLI.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_SEC_SQL" -name "JAVA.API.VARA.VARA_SEC_SQL.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_SEC_SQL" -name "JAVA.API.VARA.VARA_SEC_SQL.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.SEC_SQL" -name "JAVA.API.VARA.VARA_SEC_SQL.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.SEC_SQL" -name "JAVA.API.VARA.VARA_SEC_SQL.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_SEC_SQLI" -name "JAVA.API.VARA.VARA_SEC_SQLI.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_SEC_SQLI" -name "JAVA.API.VARA.VARA_SEC_SQLI.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.SEC_SQLI" -name "JAVA.API.VARA.VARA_SEC_SQLI.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.SEC_SQLI" -name "JAVA.API.VARA.VARA_SEC_SQLI.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_BACKEND" -name "JAVA.API.VARA.VARA_BACKEND.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_BACKEND" -name "JAVA.API.VARA.VARA_BACKEND.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.BACKEND" -name "JAVA.API.VARA.VARA_BACKEND.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.BACKEND" -name "JAVA.API.VARA.VARA_BACKEND.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_EXEC" -name "JAVA.API.VARA.VARA_EXEC.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_EXEC" -name "JAVA.API.VARA.VARA_EXEC.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.EXEC" -name "JAVA.API.VARA.VARA_EXEC.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.EXEC" -name "JAVA.API.VARA.VARA_EXEC.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_XML" -name "JAVA.API.VARA.VARA_XML.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_XML" -name "JAVA.API.VARA.VARA_XML.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.XML" -name "JAVA.API.VARA.VARA_XML.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.XML" -name "JAVA.API.VARA.VARA_XML.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT_CONS" -name "JAVA.API.EVNT.EVNT_CONS.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT_CONS" -name "JAVA.API.EVNT.EVNT_CONS.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT.CONS" -name "JAVA.API.EVNT.EVNT_CONS.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT.CONS" -name "JAVA.API.EVNT.EVNT_CONS.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT_FILE" -name "JAVA.API.EVNT.EVNT_FILE.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT_FILE" -name "JAVA.API.EVNT.EVNT_FILE.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT.FILE" -name "JAVA.API.EVNT.EVNT_FILE.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT.FILE" -name "JAVA.API.EVNT.EVNT_FILE.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT_TIME" -name "JAVA.API.EVNT.EVNT_TIME.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT_TIME" -name "JAVA.API.EVNT.EVNT_TIME.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT.TIME" -name "JAVA.API.EVNT.EVNT_TIME.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT.TIME" -name "JAVA.API.EVNT.EVNT_TIME.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT_DB" -name "JAVA.API.EVNT.EVNT_DB.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT_DB" -name "JAVA.API.EVNT.EVNT_DB.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT.DB" -name "JAVA.API.EVNT.EVNT_DB.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "EVNT.DB" -name "JAVA.API.EVNT.EVNT_DB.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CONN_SQL" -name "JAVA.API.CONN.CONN_SQL.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CONN_SQL" -name "JAVA.API.CONN.CONN_SQL.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CONN.SQL" -name "JAVA.API.CONN.CONN_SQL.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CONN.SQL" -name "JAVA.API.CONN.CONN_SQL.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CONN_DB" -name "JAVA.API.CONN.CONN_DB.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CONN_DB" -name "JAVA.API.CONN.CONN_DB.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CONN.SQL" -name "JAVA.API.CONN.CONN_DB.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CONN.SQL" -name "JAVA.API.CONN.CONN_DB.1" -folder "API.TESTS.TARGET"' 99
  
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL" -name "JAVA.API.CALL.CALL.1" -folder "API.TESTS.TARGET"' 0
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL" -name "JAVA.API.CALL.CALL.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL_STANDARD" -name "JAVA.API.CALL.CALL_STANDARD.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL_STANDARD" -name "JAVA.API.CALL.CALL_STANDARD.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL.STANDARD" -name "JAVA.API.CALL.CALL_STANDARD.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL.STANDARD" -name "JAVA.API.CALL.CALL_STANDARD.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL_MAIL" -name "JAVA.API.CALL.CALL_MAIL.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL_MAIL" -name "JAVA.API.CALL.CALL_MAIL.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL.MAIL" -name "JAVA.API.CALL.CALL_MAIL.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL.MAIL" -name "JAVA.API.CALL.CALL_MAIL.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL_ALARM" -name "JAVA.API.CALL.CALL_ALARM.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL_ALARM" -name "JAVA.API.CALL.CALL_ALARM.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL.ALARM" -name "JAVA.API.CALL.CALL_ALARM.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "CALL.ALARM" -name "JAVA.API.CALL.CALL_ALARM.1" -folder "API.TESTS.TARGET"' 99
  
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JSCH" -name "JAVA.API.JSCH.JSCH.1" -folder "API.TESTS.TARGET"' 0
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "JSCH" -name "JAVA.API.JSCH.JSCH.1" -folder "API.TESTS.TARGET"' 99
@@ -108,8 +108,8 @@ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_MULTI" -name "J
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "LOGIN" -name "JAVA.API.LOGIN.LOGIN.1" -folder "API.TESTS.TARGET"' 0
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "LOGIN" -name "JAVA.API.LOGIN.LOGIN.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "PROMPT_SET" -name "JAVA.API.PROMPT_SET.PROMPT_SET.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "PROMPT_SET" -name "JAVA.API.PROMPT_SET.PROMPT_SET.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "PRPT" -name "JAVA.API.PROMPT_SET.PROMPT_SET.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "PRPT" -name "JAVA.API.PROMPT_SET.PROMPT_SET.1" -folder "API.TESTS.TARGET"' 99
  
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "QUEUE" -name "JAVA.API.QUEUE.QUEUE.1" -folder "API.TESTS.TARGET"' 0
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "QUEUE" -name "JAVA.API.QUEUE.QUEUE.1" -folder "API.TESTS.TARGET"' 99
@@ -135,8 +135,8 @@ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA_MULTI" -name "J
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "DOCU" -name "JAVA.API.DOCU.DOCU.1" -folder "API.TESTS.TARGET"' 0
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "DOCU" -name "JAVA.API.DOCU.DOCU.1" -folder "API.TESTS.TARGET"' 99
  
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "FILTER_OUTPUT" -name "JAVA.API.FILTER_OUTPUT.FILTER_OUTPUT.1" -folder "API.TESTS.TARGET"' 0
- AddToATestCaseSuiteFull $JavaBin '-commit -check -template "FILTER_OUTPUT" -name "JAVA.API.FILTER_OUTPUT.FILTER_OUTPUT.1" -folder "API.TESTS.TARGET"' 99
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "FILTER.OUTPUT" -name "JAVA.API.FILTER_OUTPUT.FILTER_OUTPUT.1" -folder "API.TESTS.TARGET"' 0
+ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "FILTER.OUTPUT" -name "JAVA.API.FILTER_OUTPUT.FILTER_OUTPUT.1" -folder "API.TESTS.TARGET"' 99
  
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "PERIOD" -name "JAVA.API.PERIOD.PERIOD.1" -folder "API.TESTS.TARGET"' 0
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "PERIOD" -name "JAVA.API.PERIOD.PERIOD.1" -folder "API.TESTS.TARGET"' 99

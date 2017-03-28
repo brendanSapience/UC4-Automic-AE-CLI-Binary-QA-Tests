@@ -4,14 +4,14 @@ $TestCaseArray = @()
 $CurrentPath = $PSScriptRoot
 cd $BINREPO
 
-$JavaBin = "JOBS_Update.jar"
-$ObjectName = "JAVA.API.JOBS.RANDOM.1"
+$JavaBin = "JOBF_Update.jar"
+$ObjectName = "JAVA.API.JOBF.TEST.1"
 $FolderName = "API.TESTS.TARGET"
 
 # Creating an object
- AddToATestCaseSuiteFull "OBjECTS_Create.jar" "-commit -check -template 'JOBS_WIN' -name '$ObjectName' -folder '$FolderName'" 0
+ AddToATestCaseSuiteFull "OBjECTS_Create.jar" "-commit -check -template 'JOBF' -name '$ObjectName' -folder '$FolderName'" 0
 
- AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_active N" 0 "Job Set To Inactive" "Error"
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_active N" 0 "Set To Inactive" "Error"
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_genatruntime Y" 0 "Generate At Runtime Activated" "Error"
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_addvar `"['Allo#','My Value']`"" 0 "Add Variable - Name: Allo# | Value: My Valu" "Error"
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_title `"['.*','My New Title']`"" 0
@@ -31,8 +31,24 @@ $FolderName = "API.TESTS.TARGET"
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_updvar `"['Allo#','My New Value']`"" 0
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_updvar `"['NOVAR#','My New Value']`"" 0 "Could Not Update,Variable Not Found" "Error"
 
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -abort_on_err Y" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_dest_file `"['.*','c:/myFileDest*.test']`"" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_erase_source Y" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_dfile_exist OVERWRITE" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_host_from `"['.*','HOST.FROM']`"" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_host_to `"['.*','HOST.TO']`"" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_inc_subdirs Y" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_keep_attr Y" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_login_from `"['.*','LOGIN.FROM']`"" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_login_to `"['.*','LOGIN.TO']`"" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_maxtrans 31" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_set_wildcard Y" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_source_file `"['.*','c:/myFileSource*.test']`"" 0
+ AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_trans_fold_struct Y" 0
+
+
  # Deleting the object
- AddToATestCaseSuiteFull "OBjECTS_Delete.jar" "-commit -name '$ObjectName' -folder '$FolderName' -f_incsub" 0
+ #AddToATestCaseSuiteFull "OBjECTS_Delete.jar" "-commit -name '$ObjectName' -folder '$FolderName' -f_incsub" 0
 
 Write-Host "Number of Test Cases Found: $($TestCaseArray.Count)"
 

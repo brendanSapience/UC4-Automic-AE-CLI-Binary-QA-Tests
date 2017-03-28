@@ -4,12 +4,12 @@ $TestCaseArray = @()
 $CurrentPath = $PSScriptRoot
 cd $BINREPO
 
-$JavaBin = "JOBS_Update.jar"
-$ObjectName = "JAVA.API.JOBS.RANDOM.1"
+$JavaBin = "JOBS_RA_Update.jar"
+$ObjectName = "JAVA.API.JOBS.RA.FTP.1"
 $FolderName = "API.TESTS.TARGET"
 
 # Creating an object
- AddToATestCaseSuiteFull "OBjECTS_Create.jar" "-commit -check -template 'JOBS_WIN' -name '$ObjectName' -folder '$FolderName'" 0
+ AddToATestCaseSuiteFull "OBjECTS_Create.jar" "-commit -check -template 'JOBS.FTPAGENT.FTPJOB' -name '$ObjectName' -folder '$FolderName'" 0
 
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_active N" 0 "Job Set To Inactive" "Error"
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_genatruntime Y" 0 "Generate At Runtime Activated" "Error"
@@ -32,7 +32,7 @@ $FolderName = "API.TESTS.TARGET"
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_updvar `"['NOVAR#','My New Value']`"" 0 "Could Not Update,Variable Not Found" "Error"
 
  # Deleting the object
- AddToATestCaseSuiteFull "OBjECTS_Delete.jar" "-commit -name '$ObjectName' -folder '$FolderName' -f_incsub" 0
+ #AddToATestCaseSuiteFull "OBjECTS_Delete.jar" "-commit -name '$ObjectName' -folder '$FolderName' -f_incsub" 0
 
 Write-Host "Number of Test Cases Found: $($TestCaseArray.Count)"
 
