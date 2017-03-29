@@ -4,12 +4,12 @@ $TestCaseArray = @()
 $CurrentPath = $PSScriptRoot
 cd $BINREPO
 
-$JavaBin = "USER_Update.jar"
-$ObjectName = "MYUSER.API/AUTOMIC"
+$JavaBin = "USERGRP_Update.jar"
+$ObjectName = "MYUSER.GRP.API/AUTOMIC"
 $FolderName = "API.TESTS.TARGET"
 
 # Creating an object
- AddToATestCaseSuiteFull "OBjECTS_Create.jar" "-commit -check -template 'USER' -name '$ObjectName' -folder '$FolderName'" 0
+ AddToATestCaseSuiteFull "OBjECTS_Create.jar" "-commit -check -template 'USRG' -name '$ObjectName' -folder '$FolderName'" 0
 
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_title `"['.*','My New Title']`"" 0
  AddToATestCaseSuiteFullWithKeywordChecks $JavaBin "-commit -name '$ObjectName' -u_arch1 `"['.*','My New Archive 1']`"" 0
