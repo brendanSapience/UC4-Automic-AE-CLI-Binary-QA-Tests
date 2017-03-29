@@ -1,6 +1,5 @@
 ﻿. "C:\Users\brend\Documents\git\work\UC4-Automic-AE-CLI-Binary-QA-Tests\cli_lib.ps1"
 
-$TestCaseArray = @()
 $CurrentPath = $PSScriptRoot
 cd $BINREPO
 
@@ -144,28 +143,9 @@ AddToATestCaseSuiteFull $JavaBin '-commit -check -template "VARA.MULTI" -name "J
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "STORE" -name "JAVA.API.STORE.STORE.1" -folder "API.TESTS.TARGET"' 0
  AddToATestCaseSuiteFull $JavaBin '-commit -check -template "STORE" -name "JAVA.API.STORE.STORE.1" -folder "API.TESTS.TARGET"' 99
 
-Write-Host "Number of Test Cases Found: $($TestCaseArray.Count)"
 
-foreach ($testcase in $TestCaseArray) {
-  #Write-host $testcase.Command
-  #Write-host $testcase.RetCodeExpected
+ShowTestCaseNumber $($TestCaseArray.Count)
 
-  $Params = $($testcase.Command)
-  $command = "$JAVACMD $($testcase.BinaryName) $AUTHPARAMS $Params"
-  #Write-Host " %% Running Test: $command"
-  $commandOutput = iex "& $command"
-  $commandReturnCode = $lastExitCode
-
-  $Status = CheckReturnCode $($testcase.RetCodeExpected) $commandReturnCode
-  if(-Not($Status)){
-  Write-Host " -- Test Failed: $($testcase.Command). Expected: $($testcase.RetCodeExpected) Found: $commandReturnCode "
-  write-Host " Output is: "
-  echo $commandOutput
-  }else{
-  Write-Host " ++ Test OK: $($testcase.Command)."
-  }
-  
- }
-
+MainProcessStart $TestCaseArray
 
 cd $CurrentPath
